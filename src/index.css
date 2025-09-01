@@ -1,0 +1,11 @@
+@import "tailwindcss"; /* ini sudah termasuk preflight + utilities */
+
+* Warna default body */
+body {
+  @apply bg-white text-black;
+}
+
+/* Warna body saat dark mode */
+.dark body {
+  @apply bg-gray-900 text-white;
+}
