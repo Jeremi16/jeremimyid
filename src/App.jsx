@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './components/AuthContext.jsx';
 import LoginPage from './components/LoginPage.jsx';
-import ProtectedAdminPanel from './components/AdminPanel.jsx';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Home from './components/home';
