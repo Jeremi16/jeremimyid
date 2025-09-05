@@ -34,12 +34,14 @@ const ExperienceModal = ({ experience, onClose }) => {
         <div className="relative">
           {experience.photo_urls && experience.photo_urls.length > 0 ? (
             <>
-              <img
-                src={experience.photo_urls[currentPhotoIndex]}
-                alt={`${experience.title} photo ${currentPhotoIndex + 1}`}
-                className="w-full h-64 object-cover rounded-md"
-                onError={(e) => { e.target.style.display = 'none'; }}
-              />
+              <div className="w-full" style={{ paddingTop: '56.25%' }}> {/* 9/16 * 100 = 56.25% for 16:9 ratio */}
+                <img
+                  src={experience.photo_urls[currentPhotoIndex]}
+                  alt={`${experience.title} photo ${currentPhotoIndex + 1}`}
+                  className="absolute top-0 left-0 w-full h-full object-cover rounded-md"
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
+              </div>
               <button
                 className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600"
                 onClick={prevPhoto}
@@ -59,8 +61,10 @@ const ExperienceModal = ({ experience, onClose }) => {
               </p>
             </>
           ) : (
-            <div className="w-full h-64 bg-gray-700 flex items-center justify-center rounded-md text-gray-400">
-              No photos available
+            <div className="w-full" style={{ paddingTop: '56.25%' }}> {/* 16:9 ratio placeholder */}
+              <div className="absolute top-0 left-0 w-full h-full bg-gray-700 flex items-center justify-center rounded-md text-gray-400">
+                No photos available
+              </div>
             </div>
           )}
         </div>

@@ -9,9 +9,9 @@ const Navbar = () => {
 
   const navItems = [
     { href: '/', label: 'Home' },
-    { href: '/project', label: 'Project' },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/experience', label: 'Experience' }
+    { href: '/project/', label: 'Project' },
+    { href: '/gallery/', label: 'Gallery' },
+    { href: '/experience/', label: 'Experience' }
   ];
 
   const toggleDarkMode = () => {
