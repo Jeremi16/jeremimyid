@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -59,17 +59,18 @@ const Home = () => {
       <section className="py-16">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-8">
-            Achievements
+            Certification
           </h2>
           <div className="relative w-full max-w-3xl mx-auto">
             {/* Carousel container */}
             <div className="overflow-hidden rounded-lg shadow-lg">
-              <img src="/certificates/cert1.jpg" alt="Certificate 1" className="w-full" />
+              <img src="image/GeminiCertifiedEducatior-Jeremi.avif" alt="Certificate 1" className="w-full" />
             </div>
-            {/* Next button */}
+            {/* Next button 
             <button className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
               Next
-            </button>
+            </button>*/}
+            
           </div>
         </div>
       </section>
